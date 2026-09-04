@@ -1,0 +1,15 @@
+name: Agent Vigil deployment probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  protected-deployment:
+    runs-on: ubuntu-latest
+    environment: staging-deploy
+    steps:
+      - name: Record protected job entry
+        run: echo "Agent Vigil custom deployment protection approved this disposable staging job."
