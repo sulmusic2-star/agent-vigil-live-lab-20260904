@@ -27,7 +27,7 @@ jobs:
           persist-credentials: false
           allow-unsafe-pr-checkout: true
       - id: vigil
-        uses: sulmusic2-star/agent-vigil@ccf2cae545e910e1ea27eb8b9746302879fd645d # reviewed Agent Vigil runtime
+        uses: sulmusic2-star/agent-vigil@988b05da19ab6512f9497d33a76ec38b433d716b # unreleased v0.24.4 candidate; first-party isolation test only
         with:
           mode: maintainer
           policy: .agent-vigil.json
